@@ -8,6 +8,8 @@ public class Buttons : MonoBehaviour
     private const int _mainMenuIndex = 0;
     private const int _settingsIndex = 1;
     private const int _firstQuestionIndex = 2;
+    private const float _defaultGpa = 3.1f;
+    private const float _defaultStress = 0.0f;
 
     private AudioManager _audioManager;
 
@@ -31,9 +33,14 @@ public class Buttons : MonoBehaviour
     public void FirstQuestion()
     {
         SceneManager.LoadScene(_firstQuestionIndex);
-        PlayerPrefs.SetFloat("Stress", 0.0f);
-        PlayerPrefs.SetFloat("GPA", 3.1f);
+        SetInitialValues();
         _audioManager.Selection();
+    }
+
+    private void SetInitialValues()
+    {
+        PlayerPrefs.SetFloat("Stress", _defaultStress);
+        PlayerPrefs.SetFloat("GPA", _defaultGpa);
     }
 
     public void NextQuestion()
