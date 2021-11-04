@@ -32,6 +32,7 @@ public class Buttons : MonoBehaviour
     {
         SceneManager.LoadScene(_firstQuestionIndex);
         PlayerPrefs.SetFloat("Stress", 0.0f);
+        PlayerPrefs.SetFloat("GPA", 3.1f);
         _audioManager.Selection();
     }
 

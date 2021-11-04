@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Question1.unity
     guid: 19a00391fd6e6bc4596075e14c70c6f0
+  - enabled: 1
+    path: Assets/Scenes/QuestionTemplate.unity
+    guid: 6981eff07ff9a99489847754341f51fe
   m_configObjects: {}
