@@ -244,7 +244,8 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: It's Saturday, you have four midterms next week and you haven't studied
-    for any. You also have plans with you friends over the weekend. What do you do?
+    for any. You also have plans with your friends over the weekend. What do you
+    do?
 --- !u!222 &232601281
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -490,7 +491,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 294939870}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
-        m_MethodName: NextQuestion
+        m_MethodName: AdvanceTwice
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1479,7 +1480,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2129242760}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
-        m_MethodName: NextQuestion
+        m_MethodName: AdvanceOnce
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

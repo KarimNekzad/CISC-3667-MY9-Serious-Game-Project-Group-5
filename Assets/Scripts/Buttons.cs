@@ -43,9 +43,15 @@ public class Buttons : MonoBehaviour
         PlayerPrefs.SetFloat("GPA", _defaultGpa);
     }
 
-    public void NextQuestion()
+    public void AdvanceOnce()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        _audioManager.Selection();
+    }
+
+    public void AdvanceTwice()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         _audioManager.Selection();
     }
 }
