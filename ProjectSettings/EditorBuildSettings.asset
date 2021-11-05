@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Question2.unity
     guid: b1aa4ddce72e5694ab6d955b47fd4f1d
   - enabled: 1
+    path: Assets/Scenes/Question2Result1.unity
+    guid: ce6c92973d18c9245b1818d0d183ce82
+  - enabled: 1
+    path: Assets/Scenes/Question2Result2.unity
+    guid: 2e98c6b52e4ec1e4880ae9098b869907
+  - enabled: 1
     path: Assets/Scenes/QuestionTemplate.unity
     guid: 6981eff07ff9a99489847754341f51fe
   m_configObjects: {}

@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class StressMeter : MonoBehaviour
 {
+    [SerializeField] private Gradient _gradient;
+    [SerializeField] private Image _fill;
+
     private Slider _stressMeter;
 
     private const float _defaultStress = 1.0f;
@@ -21,6 +24,8 @@ public class StressMeter : MonoBehaviour
         {
             _stressMeter.value = 0;
         }
+
+        _fill.color =_gradient.Evaluate(_stressMeter.normalizedValue);
     }
 
     public void SetMeterValue(int value)
@@ -33,6 +38,7 @@ public class StressMeter : MonoBehaviour
     {
         _stressMeter.value += _defaultStress;
         PlayerPrefs.SetFloat("Stress", _stressMeter.value);
+        _fill.color = _gradient.Evaluate(_stressMeter.normalizedValue);
 
         if (_stressMeter.value == _stressMeter.maxValue)
         {
@@ -44,5 +50,6 @@ public class StressMeter : MonoBehaviour
     {
         _stressMeter.value -= _defaultStress;
         PlayerPrefs.SetFloat("Stress", _stressMeter.value);
+        _fill.color = _gradient.Evaluate(_stressMeter.normalizedValue);
     }
 }
