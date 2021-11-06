@@ -244,8 +244,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: You decide to stay home and prioritize your health. It's important to remember
-    that your health comes first.
+  m_Text: You decide to go to class. Never know what might happen if you miss a day.
 --- !u!222 &232601281
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1260,7 +1259,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2129242760}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
-        m_MethodName: AdvanceThree
+        m_MethodName: AdvanceOnce
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

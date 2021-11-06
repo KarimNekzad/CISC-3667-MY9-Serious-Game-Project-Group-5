@@ -173,6 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gpaText: {fileID: 1418147696}
+  _gpaIncrement: 0.2
 --- !u!1 &232601278
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,7 +1260,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2129242760}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
-        m_MethodName: AdvanceFour
+        m_MethodName: AdvanceTwice
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
