@@ -8,7 +8,7 @@ public class GPA : MonoBehaviour
     [SerializeField] private Text _gpaText;
 
     private float _gpa;
-    private const float _gpaIncrement = 0.2f;
+    public float _gpaIncrement = 0.2f;
 
     private void Awake()
     {
@@ -49,5 +49,9 @@ public class GPA : MonoBehaviour
         {
             Debug.Log("GPA is very low");
         }
+    }
+
+    public void BuffGpa() {
+        _gpaIncrement = 0.6f;
     }
 }

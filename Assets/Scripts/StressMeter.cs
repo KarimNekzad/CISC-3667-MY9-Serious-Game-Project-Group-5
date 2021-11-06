@@ -10,7 +10,7 @@ public class StressMeter : MonoBehaviour
 
     private Slider _stressMeter;
 
-    private const float _defaultStress = 1.0f;
+    private float _defaultStress = 1.0f;
 
     private void Awake()
     {
@@ -44,6 +44,14 @@ public class StressMeter : MonoBehaviour
         {
             Debug.Log("Player stress is at maximum");
         }
+    }
+
+    public void AddStressExtra()
+    {
+        _stressMeter.value += 2.0f;
+        PlayerPrefs.SetFloat("Stress", _stressMeter.value);
+        _fill.color = _gradient.Evaluate(_stressMeter.normalizedValue);
+
     }
 
     public void SubtractStress()

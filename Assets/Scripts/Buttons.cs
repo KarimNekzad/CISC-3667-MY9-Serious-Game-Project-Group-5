@@ -54,4 +54,16 @@ public class Buttons : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         _audioManager.Selection();
     }
+
+    public void AdvanceThree()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+        _audioManager.Selection();
+    }
+
+    public void AdvanceFour()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
+        _audioManager.Selection();
+    }
 }
