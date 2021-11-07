@@ -1,11 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class VolumeSlider : MonoBehaviour
 {
-    public void OnValueChange(float volume)
+    [SerializeField] AudioMixer _audioMixer;
+    [SerializeField] Slider _slider;
+    [SerializeField] float _volumeMultiplier = 30f;
+
+    public void Awake()
     {
-        AudioListener.volume = volume;
+        _slider.onValueChanged.AddListener(HandlesValueChange);
+    }
+
+    public void HandlesValueChange(float volume)
+    {
+        //AudioListener.volume = volume;
+        _audioMixer.SetFloat("BgVolume", Mathf.Log10(volume) * _volumeMultiplier);
     }
 }
