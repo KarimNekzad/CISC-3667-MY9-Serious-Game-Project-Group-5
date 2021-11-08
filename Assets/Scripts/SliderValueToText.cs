@@ -5,17 +5,14 @@ using UnityEngine.UI;
 public class SliderValueToText : MonoBehaviour
 {
     public Slider sliderUI;
-    private Text textSliderValue;
+    public Text textSliderValue;
 
-    void Start()
-    {
-        textSliderValue = GetComponent<Text>();
-        ShowSliderValue();
-    }
+    public Gradient _gradient;
+    public Image _fill;
 
-    public void ShowSliderValue()
+    void Update()
     {
-        string sliderMessage = sliderUI.value.ToString();
-        textSliderValue.text = sliderMessage;
+        textSliderValue.text = sliderUI.value.ToString();
+        _fill.color = _gradient.Evaluate(sliderUI.normalizedValue);
     }
 }

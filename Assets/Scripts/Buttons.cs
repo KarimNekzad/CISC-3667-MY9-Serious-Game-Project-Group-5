@@ -7,7 +7,7 @@ public class Buttons : MonoBehaviour
 {
     private const int _mainMenuIndex = 0;
     private const int _settingsIndex = 1;
-    private const int _firstQuestionIndex = 2;
+    private const int _firstQuestionIndex = 3;
     private const float _defaultGpa = 3.1f;
     private const float _defaultStress = 0.0f;
 

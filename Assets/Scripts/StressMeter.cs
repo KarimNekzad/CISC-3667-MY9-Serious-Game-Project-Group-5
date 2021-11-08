@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class StressMeter : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class StressMeter : MonoBehaviour
     private Slider _stressMeter;
 
     private float _defaultStress = 1.0f;
+    private const int _youLoseIndex = 2;
 
     private void Awake()
     {
@@ -43,6 +45,7 @@ public class StressMeter : MonoBehaviour
         if (_stressMeter.value == _stressMeter.maxValue)
         {
             Debug.Log("Player stress is at maximum");
+            SceneManager.LoadScene(_youLoseIndex);
         }
     }
 
