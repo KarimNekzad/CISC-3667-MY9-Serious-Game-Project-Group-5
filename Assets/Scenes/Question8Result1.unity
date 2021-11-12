@@ -173,7 +173,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gpaText: {fileID: 1418147696}
-  _gpaIncrement: 0.2
 --- !u!1 &232601278
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,7 +207,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10, y: -35.79}
+  m_AnchoredPosition: {x: 0, y: -0.000015258789}
   m_SizeDelta: {x: -66.467, y: -71.5802}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &232601280
@@ -233,19 +232,20 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 65
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 150
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Your uncle appreciates you for attending his wedding. You were able to
-    take your mind off studying for awhile to relax and eat good food.
+    take your mind off studying for awhile to relax and eat good food, but you're
+    worried about your financial aid.
 --- !u!222 &232601281
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1363,12 +1363,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2129242760}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
-        m_MethodName: AdvanceTwice
-        m_Mode: 1
+        m_MethodName: Advance
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

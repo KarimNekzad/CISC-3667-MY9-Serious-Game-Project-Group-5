@@ -11,7 +11,7 @@ public class StressMeter : MonoBehaviour
 
     private Slider _stressMeter;
 
-    private float _defaultStress = 1.0f;
+    private const float _stressIncrement = 1.0f;
     private const int _youLoseIndex = 2;
 
     private void Awake()
@@ -36,9 +36,9 @@ public class StressMeter : MonoBehaviour
         PlayerPrefs.SetFloat("Stress", _stressMeter.value);
     }
 
-    public void AddStress()
+    public void AddStress(float stress)
     {
-        _stressMeter.value += _defaultStress;
+        _stressMeter.value += stress;
         PlayerPrefs.SetFloat("Stress", _stressMeter.value);
         _fill.color = _gradient.Evaluate(_stressMeter.normalizedValue);
 
@@ -49,17 +49,22 @@ public class StressMeter : MonoBehaviour
         }
     }
 
-    public void AddStressExtra()
+    public void AddStress()
     {
-        _stressMeter.value += 2.0f;
+        _stressMeter.value += _stressIncrement;
         PlayerPrefs.SetFloat("Stress", _stressMeter.value);
         _fill.color = _gradient.Evaluate(_stressMeter.normalizedValue);
 
+        if (_stressMeter.value == _stressMeter.maxValue)
+        {
+            Debug.Log("Player stress is at maximum");
+            SceneManager.LoadScene(_youLoseIndex);
+        }
     }
 
     public void SubtractStress()
     {
-        _stressMeter.value -= _defaultStress;
+        _stressMeter.value -= _stressIncrement;
         PlayerPrefs.SetFloat("Stress", _stressMeter.value);
         _fill.color = _gradient.Evaluate(_stressMeter.normalizedValue);
     }

@@ -43,27 +43,9 @@ public class Buttons : MonoBehaviour
         PlayerPrefs.SetFloat("GPA", _defaultGpa);
     }
 
-    public void AdvanceOnce()
+    public void Advance(int index)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        _audioManager.Selection();
-    }
-
-    public void AdvanceTwice()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
-        _audioManager.Selection();
-    }
-
-    public void AdvanceThree()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
-        _audioManager.Selection();
-    }
-
-    public void AdvanceFour()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + index);
         _audioManager.Selection();
     }
 }

@@ -275,7 +275,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gpaText: {fileID: 1418147696}
-  _gpaIncrement: 0.2
 --- !u!1 &232601278
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,8 +345,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Committing to attending routinely can be very stressful. Using your time
-    to just catch up and stay afloat can be a good idea.
+  m_Text: You decide to be a bit lax with your studies but the fact that you're at
+    least attending gives you mental reassurance.
 --- !u!222 &232601281
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1363,12 +1362,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2129242760}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
-        m_MethodName: AdvanceTwice
-        m_Mode: 1
+        m_MethodName: Advance
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

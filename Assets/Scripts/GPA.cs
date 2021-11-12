@@ -8,7 +8,7 @@ public class GPA : MonoBehaviour
     [SerializeField] private Text _gpaText;
 
     private float _gpa;
-    public float _gpaIncrement = 0.2f;
+    public const float _gpaIncrement = 0.1f;
 
     private void Awake()
     {
@@ -34,10 +34,43 @@ public class GPA : MonoBehaviour
         }
     }
 
+    public void IncrementGpa(float increment)
+    {
+        if (IsValidGpaModifier(increment))
+        {
+            _gpa += increment;
+        }
+        else
+        {
+            Debug.Log("That GPA modifier value is invalid!");
+        }
+        
+        PlayerPrefs.SetFloat("GPA", _gpa);
+    }
+
     public void IncrementGpa()
     {
         _gpa += _gpaIncrement;
         PlayerPrefs.SetFloat("GPA", _gpa);
+    }
+
+    public void DecrementGpa(float decrement)
+    {
+        if (IsValidGpaModifier(decrement))
+        {
+            _gpa -= decrement;
+        }
+        else
+        {
+            Debug.Log("That GPA decrement is invalid!");
+        }
+        
+        PlayerPrefs.SetFloat("GPA", _gpa);
+
+        if (_gpa < 2.6)
+        {
+            Debug.Log("GPA is very low");
+        }
     }
 
     public void DecrementGpa()
@@ -51,7 +84,22 @@ public class GPA : MonoBehaviour
         }
     }
 
-    public void BuffGpa() {
-        _gpaIncrement = 0.6f;
+    private bool IsValidGpaModifier(float modifier)
+    {
+        if (modifier >= 0 && modifier <= 4)
+        {
+            if (_gpa + modifier > 4 || _gpa - modifier < 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        } 
+        else
+        {
+            return false;
+        }
     }
 }

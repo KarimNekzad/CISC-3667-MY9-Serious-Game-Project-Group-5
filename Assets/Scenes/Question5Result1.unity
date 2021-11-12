@@ -173,7 +173,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gpaText: {fileID: 1418147696}
-  _gpaIncrement: 0.2
 --- !u!1 &232601278
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,7 +232,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 65
+    m_FontSize: 120
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -244,8 +243,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: You decide to stay home and prioritize your health. It's important to remember
-    that your health comes first.
+  m_Text: You choose not to study at all.
 --- !u!222 &232601281
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1363,12 +1361,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2129242760}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
-        m_MethodName: AdvanceThree
-        m_Mode: 1
+        m_MethodName: Advance
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
