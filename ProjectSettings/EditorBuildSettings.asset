@@ -102,6 +102,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Question9Result2.unity
     guid: c730b1587b2a35d4d944f506e5a31ea2
   - enabled: 1
-    path: Assets/Scenes/ToBeContinued.unity
+    path: Assets/Scenes/EndGame.unity
     guid: ffbdf258ab46dff4c818613836ced701
   m_configObjects: {}

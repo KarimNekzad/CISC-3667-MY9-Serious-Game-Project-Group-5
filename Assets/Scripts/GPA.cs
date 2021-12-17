@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GPA : MonoBehaviour
 {
     [SerializeField] private Text _gpaText;
+    //[SerializeField] private Text _endScreen;
 
     private float _gpa;
     public const float _gpaIncrement = 0.1f;
@@ -102,4 +103,6 @@ public class GPA : MonoBehaviour
             return false;
         }
     }
+
+
 }
