@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Instructions.unity
     guid: e5b79865b26661e45b8711f12d6fbeaf
   - enabled: 1
+    path: Assets/Scenes/Educate1.unity
+    guid: 3c5ecb311b38546d0aac80e6201b54a8
+  - enabled: 1
     path: Assets/Scenes/Question1.unity
     guid: 19a00391fd6e6bc4596075e14c70c6f0
   - enabled: 1
@@ -66,9 +69,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Question5Result1.unity
     guid: a49b249b26e37ee40b94ad9b721620f4
   - enabled: 1
-    path: Assets/Scenes/Question5Result2.unity
-    guid: d7627513fa1bb664fb384d431897c775
-  - enabled: 1
     path: Assets/Scenes/Question6.unity
     guid: 3a0bc11b0bb4948fb8f522e6d961d190
   - enabled: 1
@@ -79,7 +79,7 @@ EditorBuildSettings:
     guid: 5d0537ed964b44be1b0653afd6d55ef9
   - enabled: 1
     path: Assets/Scenes/Question7.unity
-    guid: b4363e0bd6cb84a378be05be2c34390d
+    guid: 969a04a9aba2e43279444bd0d04a44de
   - enabled: 1
     path: Assets/Scenes/Question7Result1.unity
     guid: 15b480982cbe64671af58f799e3cd0b7
