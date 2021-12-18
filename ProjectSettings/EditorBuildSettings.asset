@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/YouLose.unity
     guid: 6fe80d9345dd45f43b5a2e592d613ab2
   - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: e5b79865b26661e45b8711f12d6fbeaf
+  - enabled: 1
     path: Assets/Scenes/Question1.unity
     guid: 19a00391fd6e6bc4596075e14c70c6f0
   - enabled: 1
