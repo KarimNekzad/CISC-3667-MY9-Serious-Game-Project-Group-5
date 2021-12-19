@@ -116,4 +116,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndGame.unity
     guid: ffbdf258ab46dff4c818613836ced701
+  - enabled: 1
+    path: Assets/Scenes/Learn More.unity
+    guid: 61c9e7f79c6e235428c07a245852c51d
   m_configObjects: {}

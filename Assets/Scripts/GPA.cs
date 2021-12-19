@@ -57,16 +57,9 @@ public class GPA : MonoBehaviour
 
     public void DecrementGpa(float decrement)
     {
-        if (IsValidGpaModifier(decrement))
-        {
-            _gpa -= decrement;
-        }
-        else
-        {
-            Debug.Log("That GPA decrement is invalid!");
-        }
-        
+        _gpa -= decrement;
         PlayerPrefs.SetFloat("GPA", _gpa);
+        Debug.Log(_gpa);
 
         if (_gpa < 2.6)
         {
@@ -77,6 +70,19 @@ public class GPA : MonoBehaviour
     public void DecrementGpa()
     {
         _gpa -= _gpaIncrement;
+        Debug.Log(_gpa);
+        PlayerPrefs.SetFloat("GPA", _gpa);
+
+        if (_gpa < 2.6)
+        {
+            Debug.Log("GPA is very low");
+        }
+    }
+
+    public void DecrementGpaHeavy()
+    {
+        _gpa -= 0.6f;
+        Debug.Log(_gpa);
         PlayerPrefs.SetFloat("GPA", _gpa);
 
         if (_gpa < 2.6)

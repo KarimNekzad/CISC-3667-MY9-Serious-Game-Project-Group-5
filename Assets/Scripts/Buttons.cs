@@ -9,9 +9,11 @@ public class Buttons : MonoBehaviour
     private const int _settingsIndex = 1;
     private const int _instructionsIndex = 3;
     private const int _educate1Index = 4;
+    private const int _learnMoreIndex = 37;
     private const int _firstQuestionIndex = 5;
     private const float _defaultGpa = 3.1f;
     private const float _defaultStress = 0.0f;
+
 
     private AudioManager _audioManager;
 
@@ -23,6 +25,12 @@ public class Buttons : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene(_mainMenuIndex);
+        _audioManager.Selection();
+    }
+
+    public void LearnMore()
+    {
+        SceneManager.LoadScene(_learnMoreIndex);
         _audioManager.Selection();
     }
 
